@@ -1,12 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Button,{ButtonType, ButtonSize} from './components/Button/button';
 
-function App() {
+const App :React.FC = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <hr/>
+        <h1>hello</h1>
+        <h2>hello</h2>
+        <h3>hello</h3>
+        <h4>hello</h4>
+        <Button>默认按钮</Button> 
+         <Button btnType={ButtonType.Primary}>Primary</Button>
+         <Button btnType={ButtonType.Danger} size={ButtonSize.Large}>Danger</Button>
+         <Button btnType={ButtonType.Link} size={ButtonSize.Small} href="http://www.baidu.com">Link</Button>
+         <Button btnType={ButtonType.Link} disabled>Link</Button>
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
