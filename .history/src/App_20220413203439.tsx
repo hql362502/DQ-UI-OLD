@@ -1,0 +1,46 @@
+import React from 'react';
+import Button,{ButtonType, ButtonSize} from './components/Button/button';
+
+const App :React.FC = () => {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <hr/>
+        <h1>hello</h1>
+        <h2>hello</h2>
+        <h3>hello</h3>
+        <h4>hello</h4>
+        <Button>默认按钮</Button> 
+         <Button btnType={ButtonType.Primary}>Primary</Button>
+         <Button btnType={ButtonType.Danger} size={ButtonSize.Large}>Danger</Button>
+         <Button btnType={ButtonType.Link} size="sm" href="http://www.baidu.com">Link</Button>
+        <Button btnType={ButtonType.Link} disabled>Link</Button>
+        <Button
+        btnType="link"
+        size="lg"
+        target="_blank"
+        href="http://www.baidu.com"
+      >
+        button
+      </Button>
+      <Button btnType="default">default</Button>
+      <Button btnType="primary">button</Button>
+      <Button btnType="danger">button</Button>
+      <Button size="sm" disabled>
+        <p>
+          Edit <code>src/App.tsx</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+  );
+}
+
+export default App;
