@@ -1,0 +1,16 @@
+.alert {
+  display: inline-flex;
+  // position: relative;
+  padding: $alert-padding-y $alert-padding-x;
+  border-width: 1px;
+  border: 1px solid transparent;
+  border-radius: $alert-border-radius;
+  box-shadow: $alert-box-shadow;
+  min-width: 200px;
+  // .left.alert-message{
+  //   margin-bottom: 0;
+  // }
+  .right{
+    margin-left: auto;
+  }
+}

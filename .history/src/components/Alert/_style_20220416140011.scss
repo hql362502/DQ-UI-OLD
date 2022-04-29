@@ -1,0 +1,35 @@
+.alert {
+  display: inline-flex;
+  // position: relative;
+  padding: $alert-padding-y $alert-padding-x;
+  border-width: 1px;
+  border: 1px solid transparent;
+  border-radius: $alert-border-radius;
+  flex-direction: row;
+  box-shadow: $alert-box-shadow;
+  
+  min-width: 200px;
+  .left{
+    flex:1;
+  }
+  .right{
+    width: 10px;
+    height: 10px;
+    margin-left: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bolder;
+  }
+}
+.alert-default {
+  @include alert-type($gray-200, black);
+}
+.alert-success {
+  @include alert-type($success, white);
+}
+.alert-danger {
+  @include alert-type($danger, white);
+}
+.alert-warning {
+  @include alert-type($warning, white);
+}

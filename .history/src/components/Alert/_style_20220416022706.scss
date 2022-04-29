@@ -1,0 +1,30 @@
+.alert {
+  display: inline-flex;
+  // position: relative;
+  padding: $alert-padding-y $alert-padding-x;
+  border-width: 1px;
+  border: 1px solid transparent;
+  border-radius: $alert-border-radius;
+  
+  box-shadow: $alert-box-shadow;
+  min-width: 200px;
+  .right{
+    margin-left: auto;
+  }
+}
+.alert-default {
+  @include alert-type($white, $gray-400);
+}
+.alert-success {
+  @include alert-type($white, $gray-400);
+  background-color: $success;
+  color: white;
+}
+.alert-danger {
+  @include alert-type($white, $gray-400);
+  background-color: $danger;
+  color: white;
+}
+.alert-warning {
+  @include alert-type($warning, white);
+}
